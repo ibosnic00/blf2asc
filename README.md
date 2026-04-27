@@ -6,10 +6,6 @@ This simple script converts `.blf` (CANalyzer/CANoe) files into `.asc` (ASCII).
 
 ```$ pip install requirements.txt```
 
-## How to use
-
-```$ python blf2asc.py -i "inputfile.blf" -o "outputfile.asc"```
-
 ## GUI
 
 Start the graphical converter with:
@@ -18,6 +14,14 @@ Start the graphical converter with:
 
 Load a BLF file, select the channels and CAN IDs you want to include, then click `Convert`.
 The GUI shows progress while scanning and converting.
+
+![GUI preview](misc/preview.jpg)
+
+## CLI
+
+Convert a BLF file from the command line with:
+
+```$ python blf2asc.py -i "inputfile.blf" -o "outputfile.asc"```
 
 To include only messages with specific CAN IDs, pass a comma-separated list with `-c` or `--can-id`:
 
